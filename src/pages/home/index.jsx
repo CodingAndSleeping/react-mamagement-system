@@ -1,8 +1,8 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 import { getData } from '../../api/data'
 function Home() {
-  // const [data, setData] = useState([])
+  const [data, setData] = useState([])
 
   useEffect(() => {
     async function fetchData() {
