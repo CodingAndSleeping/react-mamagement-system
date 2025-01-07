@@ -25,7 +25,7 @@ class HttpRequest {
       error => Promise.reject(error)
     )
     instance.interceptors.response.use(
-      response => response,
+      response => response.data,
       error => Promise.reject(error)
     )
   }
